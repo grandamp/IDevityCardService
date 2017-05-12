@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<!-- IDevity Application theme. -->
+	<!-- baseline colors referenced in the colors.xml -->
+	<style name="idevityMainapptheme" parent="android:style/Theme.Holo.Light">
+		<!-- All customizations that are NOT specific to a particular API-level 
+			can go here. -->
+		<!-- <item name="android:selectableItemBackground">@drawable/ad_selectable_background</item> -->
+		<item name="android:actionBarStyle">@style/idevityActionbar</item>
+		<item name="android:actionMenuTextAppearance">@style/idevityActionbar.MenuTextStyle</item>
+		<!-- <item name="android:actionBarTabStyle">@style/idevityActionBarTabStyle</item> -->
+	</style>
+
+	<!-- <style name="idevityActionBarTabStyle" parent="android:style/Widget.Holo.Light.ActionBarView_TabView"> 
+		<item name="android:background">@drawable/tab_select</item> </style> -->
+
+	<style name="ButtonBarButton" />
+
+		
+	<!-- IDevity Application theme. -->
+	<!-- baseline colors referenced in the colors.xml -->
+	<style name="Theme.idevityMainapptheme" parent="@android:style/Theme.Holo.Light">
+		<item name="android:popupMenuStyle">@style/PopupMenu.idevityMainapptheme</item>
+		<item name="android:dropDownListViewStyle">@style/DropDownListView.idevityMainapptheme</item>
+		<item name="android:actionBarTabStyle">@style/ActionBarTabStyle.idevityMainapptheme</item>
+		<item name="android:actionDropDownStyle">@style/DropDownNav.idevityMainapptheme</item>
+		<item name="android:actionBarStyle">@style/ActionBar.Transparent.idevityMainapptheme</item>
+		<item name="android:actionModeBackground">@drawable/cab_background_top_idevityactionbar</item>
+		<item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_idevityactionbar</item>
+		<item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.idevityMainapptheme</item>
+	</style>
+	
+	<!-- primary action bars, button bars and tabs styles -->
+	<style name="idevityActionbar" parent="android:style/Widget.Holo.Light.ActionBar">
+		<item name="android:background">@color/idwhite</item>
+		<item name="android:titleTextStyle">@style/idevityActionbar.TitleTextStyle</item>
+	</style>
+
+	<style name="ActionBar.Solid.idevityMainapptheme" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+		<item name="android:background">@drawable/ab_solid_idevityactionbar</item>
+		<item name="android:backgroundStacked">@drawable/ab_stacked_solid_idevityactionbar</item>
+		<item name="android:backgroundSplit">@drawable/ab_bottom_solid_idevityactionbar</item>
+		<item name="android:progressBarStyle">@style/ProgressBar.idevityMainapptheme</item>
+	</style>
+
+	<style name="ActionBar.Transparent.idevityMainapptheme" parent="@android:style/Widget.Holo.Light.ActionBar">
+		<item name="android:background">@drawable/ab_transparent_idevityactionbar</item>
+		<item name="android:progressBarStyle">@style/ProgressBar.idevityMainapptheme</item>
+	</style>
+
+	<style name="PopupMenu.idevityMainapptheme" parent="@android:style/Widget.Holo.Light.ListPopupWindow">
+		<item name="android:popupBackground">@drawable/menu_dropdown_panel_idevityactionbar</item>
+	</style>
+
+	<style name="DropDownListView.idevityMainapptheme" parent="@android:style/Widget.Holo.Light.ListView.DropDown">
+		<item name="android:listSelector">@drawable/selectable_background_idevityactionbar</item>
+	</style>
+
+	<style name="ActionBarTabStyle.idevityMainapptheme" parent="@android:style/Widget.Holo.Light.ActionBar.TabView">
+		<item name="android:background">@drawable/tab_indicator_ab_idevityactionbar</item>
+	</style>
+
+	<style name="DropDownNav.idevityMainapptheme" parent="@android:style/Widget.Holo.Light.Spinner">
+		<item name="android:background">@drawable/spinner_background_ab_idevityactionbar</item>
+		<item name="android:popupBackground">@drawable/menu_dropdown_panel_idevityactionbar</item>
+		<item name="android:dropDownSelector">@drawable/selectable_background_idevityactionbar</item>
+	</style>
+
+	<style name="ProgressBar.idevityMainapptheme"
+		parent="@android:style/Widget.Holo.Light.ProgressBar.Horizontal">
+		<item name="android:progressDrawable">@drawable/progress_horizontal_idevityactionbar</item>
+	</style>
+
+	<style name="ActionButton.CloseMode.idevityMainapptheme"
+		parent="@android:style/Widget.Holo.Light.ActionButton.CloseMode">
+		<item name="android:background">@drawable/btn_cab_done_idevityactionbar</item>
+	</style>
+
+	<!-- this style is only referenced in a Light.DarkActionBar based theme -->
+	<style name="Theme.idevityMainapptheme.Widget" parent="@android:style/Theme.Holo">
+		<item name="android:popupMenuStyle">@style/PopupMenu.idevityMainapptheme</item>
+		<item name="android:dropDownListViewStyle">@style/DropDownListView.idevityMainapptheme</item>
+	</style>
+
+	<style name="idevityActionbar.TitleTextStyle"
+		parent="android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+		<item name="android:textColor">@color/idredmain</item>
+		<item name="android:textSize">@dimen/title_text_size</item>
+	</style>
+
+	<style name="idevityActionbar.MenuTextStyle"
+		parent="android:style/TextAppearance.Holo.Widget.ActionBar.Menu">
+		<item name="android:textColor">@color/idredmain</item>
+		<item name="android:textSize">24sp</item>
+	</style>
+
+	<!-- primary activity styles for inputs, labels, etc -->
+	<style name="Labels" parent="Theme.idevityMainapptheme">
+		<!-- Label customizations -->
+		<item name="android:textColor">@color/idblack</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:background">@android:color/transparent</item>
+		<item name="android:gravity">left</item>
+		<!-- <item name="android:layout_width">wrap_content</item> -->
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginBottom">@dimen/inputmarginbottom</item>
+		<item name="android:layout_marginLeft">@dimen/inputmarginleft</item>
+		<item name="android:layout_marginTop">@dimen/inputmargintop</item>
+	</style>
+
+	<style name="Labelsrelative" parent="Theme.idevityMainapptheme">
+		<!-- Label customizations -->
+		<item name="android:textColor">@color/idblack</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:background">@android:color/transparent</item>
+		<item name="android:layout_alignParentLeft">true</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginBottom">@dimen/inputmarginbottom</item>
+		<item name="android:layout_marginLeft">@dimen/inputmarginleft</item>
+		<item name="android:layout_marginTop">@dimen/inputmargintop</item>
+	</style>
+
+	<style name="Inputtext" parent="Theme.idevityMainapptheme">
+		<!-- Edit text customizations -->
+		<item name="android:textColor">@color/idblack</item>
+		<!-- <item name="android:textStyle">bold</item> -->
+		<item name="android:background">@android:color/transparent</item>
+		<item name="android:gravity">right</item>
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginBottom">@dimen/inputmarginbottom</item>
+		<item name="android:layout_marginRight">@dimen/inputmarginleft</item>
+		<item name="android:layout_marginTop">@dimen/inputmargintop</item>
+	</style>
+
+	<style name="Showtext" parent="Theme.idevityMainapptheme">
+		<!-- Edit text customizations -->
+		<item name="android:textColor">@color/idblack</item>
+		<item name="android:background">@android:color/transparent</item>
+		<item name="android:layout_alignParentRight">true</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginBottom">@dimen/inputmarginbottom</item>
+		<item name="android:layout_marginRight">@dimen/inputmarginleft</item>
+		<item name="android:layout_marginTop">@dimen/inputmargintop</item>
+	</style>
+
+	<style name="Logtext" parent="Theme.idevityMainapptheme">
+		<item name="android:textColor">#00CC00</item>
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">match_parent</item>
+	</style>
+
+	<style name="Buttons" parent="Theme.idevityMainapptheme">
+		<!-- Edit text customizations -->
+		<item name="android:textColor">@color/idredmain</item>
+		<item name="android:textStyle">bold</item>
+		<!-- <item name="android:layout_width">0dp</item> -->
+		<!-- <item name="android:layout_height">wrap_content</item> -->
+	</style>
+
+	<!-- leftover styles from todd; reuse full screen theme and extend -->
+	<style name="Instructions" parent="Theme.idevityMainapptheme">
+		<!-- Edit Instructions customizations -->
+		<item name="android:textColor">@color/idblack</item>
+		<!--<item name="android:textStyle">bold</item> -->
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:gravity">center_horizontal</item>
+		<item name="android:background">@android:color/transparent</item>
+	</style>
+
+	<style name="FullscreenTheme" parent="Theme.idevityMainapptheme">
+		<item name="android:windowContentOverlay">@null</item>
+		<item name="android:windowBackground">@null</item>
+		<item name="buttonBarStyle">@style/ButtonBar</item>
+		<item name="buttonBarButtonStyle">@style/ButtonBarButton</item>
+	</style>
+
+	<style name="ButtonBar" parent="Theme.idevityMainapptheme">
+		<item name="android:paddingLeft">2dp</item>
+		<item name="android:paddingTop">5dp</item>
+		<item name="android:paddingRight">2dp</item>
+		<item name="android:paddingBottom">0dp</item>
+		<item name="android:background">@android:drawable/bottom_bar</item>
+	</style>
+
+	<style name="Inputtext1" parent="Theme.idevityMainapptheme">
+		<!-- Edit text customizations -->
+		<item name="android:textColor">@color/idblack</item>
+		<!-- <item name="android:textStyle">bold</item> -->
+		<item name="android:background">@android:color/transparent</item>
+		<item name="android:gravity">left</item>
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginBottom">@dimen/inputmarginbottom</item>
+		<item name="android:layout_marginRight">@dimen/inputmarginleft</item>
+		<item name="android:layout_marginTop">@dimen/inputmargintop</item>
+	</style>
+
+	<style name="Inputtext_bold" parent="Theme.idevityMainapptheme">
+		<!-- Edit text customizations -->
+		<item name="android:textColor">@color/idblack</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:background">@android:color/transparent</item>
+		<item name="android:gravity">left</item>
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginBottom">@dimen/inputmarginbottom</item>
+		<item name="android:layout_marginRight">@dimen/inputmarginleft</item>
+		<item name="android:layout_marginTop">@dimen/inputmargintop</item>
+	</style>
+
+	<style name="Inputtext_bold_large" parent="Theme.idevityMainapptheme">
+		<!-- Edit text customizations -->
+		<item name="android:textColor">@color/idblack</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textSize">20sp</item>
+		<item name="android:background">@android:color/transparent</item>
+		<item name="android:gravity">left</item>
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginBottom">@dimen/inputmarginbottom</item>
+		<item name="android:layout_marginRight">@dimen/inputmarginleft</item>
+		<item name="android:layout_marginTop">@dimen/inputmargintop</item>
+	</style>
+	
+</resources>
+

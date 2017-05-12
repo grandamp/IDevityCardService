@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/progressView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mainbkgrd" >
+
+    <ImageView
+        android:id="@+id/idevityidlogo"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/idevity_logo"
+        android:src="@drawable/idevity_logo_9" />
+
+	<TextView
+	    android:id="@+id/instructions2"
+	    style="@style/Instructions"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerVertical="true"
+	    android:layout_centerHorizontal="true"
+	    android:text="@string/instructions_clone_2" />
+
+	<TextView
+	    android:id="@+id/instructions3"
+	    style="@style/Instructions"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/button1"
+	    android:layout_centerVertical="true"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginBottom="16dp"
+	    android:text="@string/instructions_clone_3" />
+
+	<Button
+	    android:id="@+id/button1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginBottom="15dp"
+	    android:text="@string/clone_btn_launch" />
+
+	<TextView
+	    android:id="@+id/instructions1"
+	    style="@style/Instructions"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/idevityidlogo"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="111dp"
+	    android:text="@string/instructions_clone_1" />
+	
+</RelativeLayout>

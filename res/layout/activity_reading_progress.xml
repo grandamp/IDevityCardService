@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/progressView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mainbkgrd" >
+
+    <ImageView
+        android:id="@+id/idevityidlogo"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/idevity_logo"
+        android:src="@drawable/idevity_logo_9" />
+
+    <TextView
+        android:id="@+id/instructions1"
+        style="@style/Instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/idevityidlogo"
+        android:text="@string/instructions_1" />
+
+    <ProgressBar
+        android:id="@+id/spinner"
+        style="?android:attr/progressBarStyleInverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/instructions1"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="true" />
+
+    <TextView
+        android:id="@+id/progressText"
+        style="@style/Instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_centerHorizontal="true"
+        android:text="@string/progress_text" />
+
+    <TextView
+        android:id="@+id/instructions2"
+        style="@style/Instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/progressText"
+        android:text="@string/instructions_2" />
+	<RelativeLayout 
+	    android:id="@+id/progressViewbottom"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" >
+	    <TextView
+	        android:id="@+id/nfc_disclaimer"
+	        style="@style/Instructions"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true" 
+	        android:text="@string/nfc_disclaimer"
+	        android:textStyle="italic" />
+	    <TextView
+	        android:id="@+id/nfc_disclaimer2"
+	        style="@style/Instructions"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true" 
+	        android:text="@string/nfc_disclaimer_more_info"
+	        android:layout_below="@+id/nfc_disclaimer"
+	        android:textStyle="italic" />
+	    </RelativeLayout>
+</RelativeLayout>

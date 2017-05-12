@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbkgrd"
+    tools:context=".Easter" >
+
+    <TextView
+        android:id="@+id/easterinstructions1"
+        style="@style/Instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/easterinstructions1"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/easterinstructions2"
+        style="@style/Instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/easterinstructions1"
+        android:text="@string/easterinstructions2" />
+
+    <TextView
+        android:id="@+id/eastercardtype"
+        style="@style/Labels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/easterinstructions2"
+        android:text="@string/eastercardtype" />
+
+    <Spinner
+        android:id="@+id/cardtypespinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eastercardtype"
+        android:entries="@array/cardtypemanarray" />
+
+    <TextView
+        android:id="@+id/eastercardothertext"
+        style="@style/Labels"
+        android:labelFor="@+id/eastercardother"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/cardtypespinner"
+        android:text="@string/eastercardother" />
+
+    <EditText
+        android:id="@+id/eastercardother"
+        style="@style/Inputtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/eastercardothertext"
+        android:background="@color/idgraymain"
+        android:gravity="right|left" />
+
+    <TextView
+        android:id="@+id/eastercardissuertext"
+        style="@style/Labels"
+        android:labelFor="@+id/eastercardissuer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/eastercardother"
+        android:text="@string/eastercardissuer" />
+
+    <EditText
+        android:id="@+id/eastercardissuer"
+        style="@style/Inputtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/eastercardissuertext"
+        android:background="@color/idgraymain"
+        android:gravity="right|left" />
+
+    <TextView
+        android:id="@+id/eastercarddatetext"
+        style="@style/Labels"
+        android:labelFor="@+id/eastercarddate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/eastercardissuer"
+        android:text="@string/eastercardissuedate" />
+
+    <EditText
+        android:id="@+id/eastercarddate"
+        style="@style/Inputtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/eastercarddatetext"
+        android:background="@color/idgraymain"
+        android:gravity="right|left" />
+
+    <TextView
+        android:id="@+id/eastershare"
+        style="@style/Instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/eastercarddate"
+        android:text="@string/easterinstructions3" />
+
+    <TextView
+        android:id="@+id/easterprivacy"
+        style="@style/Instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/easterinstructions2"
+        android:layout_alignParentBottom="true"
+        android:text="@string/easterprivacy" />
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+	<!-- Default screen margins, per the Android Design guidelines. -->
+	<string name="title_activity_chuid_input">Verify Profile</string>
+	<string name="title_activity_main">Card Emulator (alpha)</string>
+	<string name="create_button">Create Profile</string>
+	<string name="dummy_content">ALPHA\nVERSION</string>
+	<dimen name="tab_text_size">14dp</dimen>
+	<dimen name="activity_horizontal_margin">16dp</dimen>
+	<dimen name="activity_vertical_margin">16dp</dimen>
+	<dimen name="inputmarginbottom">0dp</dimen>
+	<dimen name="inputmarginleft">4dp</dimen>
+	<dimen name="inputmargintop">8dp</dimen>
+	<dimen name="title_text_size">24dp</dimen>
+
+</resources>

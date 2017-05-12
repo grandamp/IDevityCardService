@@ -1,0 +1,16 @@
+com.idevity.android.PIVCardService
+com.idevity.android.PIVCardService: PIVCardService()
+com.idevity.card.emulator.EmulationLogActivity
+com.idevity.card.emulator.EmulationLogActivity: EmulationLogActivity()
+com.idevity.card.emulator.EmulationService
+com.idevity.card.emulator.EmulationService: EmulationService()
+com.idevity.card.read.Easter
+com.idevity.card.read.Easter: Easter()
+com.idevity.card.read.IdevityInfo
+com.idevity.card.read.IdevityInfo: IdevityInfo()
+com.idevity.card.read.Read80073
+com.idevity.card.read.Read80073: Read80073()
+com.idevity.card.read.SettingsActivity
+com.idevity.card.read.SettingsActivity: SettingsActivity()
+com.idevity.card.read.SplashActivity
+com.idevity.card.read.SplashActivity: SplashActivity()

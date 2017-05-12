@@ -1,0 +1,393 @@
+android.support.v4.app.NavUtils -> a.a.a.a.a:
+    android.support.v4.app.NavUtils$NavUtilsImpl IMPL -> a
+    void navigateUpFromSameTask(android.app.Activity) -> a
+    java.lang.String getParentActivityName(android.app.Activity) -> b
+    java.lang.String getParentActivityName(android.content.Context,android.content.ComponentName) -> a
+android.support.v4.app.NavUtils$NavUtilsImpl -> a.a.a.a.b:
+    android.content.Intent getParentActivityIntent(android.app.Activity) -> a
+    void navigateUpTo(android.app.Activity,android.content.Intent) -> a
+    java.lang.String getParentActivityName(android.content.Context,android.content.pm.ActivityInfo) -> a
+android.support.v4.app.NavUtils$NavUtilsImplJB -> a.a.a.a.c:
+    android.content.Intent getParentActivityIntent(android.app.Activity) -> a
+    void navigateUpTo(android.app.Activity,android.content.Intent) -> a
+    java.lang.String getParentActivityName(android.content.Context,android.content.pm.ActivityInfo) -> a
+android.support.v4.content.IntentCompat -> a.a.a.b.a:
+    android.support.v4.content.IntentCompat$IntentCompatImpl IMPL -> a
+    android.content.Intent makeMainActivity(android.content.ComponentName) -> a
+android.support.v4.content.IntentCompat$IntentCompatImpl -> a.a.a.b.b:
+    android.content.Intent makeMainActivity(android.content.ComponentName) -> a
+android.support.v4.content.IntentCompat$IntentCompatImplHC -> a.a.a.b.c:
+    android.content.Intent makeMainActivity(android.content.ComponentName) -> a
+android.support.v4.content.IntentCompat$IntentCompatImplIcsMr1 -> a.a.a.b.d:
+com.idevity.android.CardChannel -> com.idevity.android.a:
+    java.lang.String TAG -> a
+    android.nfc.tech.IsoDep channel -> b
+    boolean isConnected -> c
+    int timeOut -> d
+    byte[] historicalBytes -> e
+    void close() -> a
+    boolean isConnected() -> b
+    byte[] transceive(byte[]) -> a
+    org.keysupport.smartcardio.ResponseAPDU transmit(org.keysupport.smartcardio.CommandAPDU) -> a
+    byte[] getHistoricalBytes() -> c
+com.idevity.android.CompactTLVFactory -> com.idevity.android.b:
+    byte[] selectedApp -> a
+    boolean implicitSelected -> b
+    boolean selectPartial -> c
+    boolean selectFull -> d
+    void processCTLV(byte[]) -> c
+    byte[] getSelectedAppAID() -> a
+    boolean isAppImplicitSelected() -> b
+    boolean allowsPartialSelect() -> c
+    boolean allowsFullSelect() -> d
+    java.lang.String byteArrayToString(byte[]) -> a
+    byte[][] getArrays(byte[],int,boolean) -> a
+    byte[] getByteArray(java.lang.String) -> a
+    java.lang.String getString(byte[]) -> b
+    byte[] stringToByteArray(java.lang.String) -> b
+com.idevity.android.InvalidResponseException -> com.idevity.android.c:
+com.idevity.android.PIVCardService -> com.idevity.android.PIVCardService:
+    java.lang.String TAG -> c
+    android.os.Messenger mService -> a
+    boolean mIsBound -> d
+    android.os.Messenger mMessenger -> b
+    android.content.ServiceConnection mConnection -> e
+    void doUnbindService() -> b
+    byte[] processCommandApdu(byte[],android.os.Bundle) -> processCommandApdu
+    void onDeactivated(int) -> onDeactivated
+    void onCreate() -> onCreate
+    void onDestroy() -> onDestroy
+    java.lang.String access$0() -> a
+com.idevity.android.PIVCardService$1 -> com.idevity.android.d:
+    com.idevity.android.PIVCardService this$0 -> a
+    void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+    void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+com.idevity.android.PIVCardService$IncomingHandler -> com.idevity.android.e:
+    com.idevity.android.PIVCardService this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.idevity.card.emulator.EmulationLogActivity -> com.idevity.card.emulator.EmulationLogActivity:
+    java.lang.String TAG -> c
+    android.os.Messenger mService -> a
+    boolean mIsBound -> d
+    com.idevity.card.emulator.data.CardData80073 cardData -> e
+    android.widget.TextView mCallbackText -> f
+    android.widget.ScrollView mCallbackScroll -> g
+    com.idevity.card.read.Globals g -> h
+    android.os.Messenger mMessenger -> b
+    android.content.ServiceConnection mConnection -> i
+    void onCreate(android.os.Bundle) -> onCreate
+    void onDestroy() -> onDestroy
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    android.widget.TextView access$0() -> a
+    java.lang.String access$1() -> b
+    android.widget.ScrollView access$2() -> c
+    com.idevity.card.emulator.data.CardData80073 access$3() -> d
+com.idevity.card.emulator.EmulationLogActivity$1 -> com.idevity.card.emulator.a:
+    com.idevity.card.emulator.EmulationLogActivity this$0 -> a
+    void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+    void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+com.idevity.card.emulator.EmulationLogActivity$IncomingHandler -> com.idevity.card.emulator.b:
+    void handleMessage(android.os.Message) -> handleMessage
+com.idevity.card.emulator.EmulationService -> com.idevity.card.emulator.EmulationService:
+    java.lang.String TAG -> e
+    android.os.Messenger mHCEClient -> a
+    android.os.Messenger mLogClient -> b
+    byte[] mReqAPDUValue -> c
+    byte[] mResAPDUValue -> d
+    com.idevity.card.emulator.data.CardData80073 cardData -> f
+    com.idevity.card.emulator.applets.Applet80073 applet -> g
+    android.os.Messenger mMessenger -> h
+    void onCreate() -> onCreate
+    void onDestroy() -> onDestroy
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    java.lang.String access$0() -> a
+    void access$1(com.idevity.card.emulator.data.CardData80073) -> a
+    com.idevity.card.emulator.data.CardData80073 access$2() -> b
+    void access$3(com.idevity.card.emulator.applets.Applet80073) -> a
+    com.idevity.card.emulator.applets.Applet80073 access$4() -> c
+com.idevity.card.emulator.EmulationService$IncomingHandler -> com.idevity.card.emulator.c:
+    void handleMessage(android.os.Message) -> handleMessage
+com.idevity.card.emulator.applets.Applet80073 -> com.idevity.card.emulator.a.a:
+    java.lang.String TAG -> a
+    com.idevity.card.emulator.data.CardData80073 cardData -> b
+    com.idevity.card.emulator.applets.PIVDataObject chuidOBJ -> c
+    byte[] AID -> d
+    byte[] TAG_ALLOC -> e
+    org.keysupport.smartcardio.ResponseAPDU processCommand(byte[]) -> a
+    org.keysupport.smartcardio.ResponseAPDU getCHUID(int) -> a
+    void setCardData(com.idevity.card.emulator.data.CardData80073) -> a
+com.idevity.card.emulator.applets.PIVApplet -> com.idevity.card.emulator.a.b:
+    java.lang.String TAG -> a
+com.idevity.card.emulator.applets.PIVDataObject -> com.idevity.card.emulator.a.c:
+    byte[] buf -> a
+    int pos -> b
+    int count -> c
+    byte[] read(int) -> a
+    int available() -> a
+    void reset() -> b
+    java.util.Enumeration decodeTLV(byte[]) -> a
+    org.keysupport.encoding.TLV encodeTLV(org.keysupport.encoding.Tag,byte[]) -> a
+com.idevity.card.emulator.data.CardData80073 -> com.idevity.card.emulator.b.a:
+    byte[] carddata -> a
+    byte[] atshb -> b
+    byte[] cplc -> c
+    byte[] csn -> d
+    org.keysupport.nist80073.datamodel.PIVCardApplicationProperty pcap -> e
+    org.keysupport.nist80073.datamodel.PIVCardHolderUniqueID chuid -> f
+    org.keysupport.nist80073.datamodel.PIVDiscoveryObject pdo -> g
+    org.keysupport.nist80073.datamodel.PIVCertificate cardauthcert -> h
+    boolean debug -> i
+    void init() -> c
+    byte[] toByteArray() -> a
+    org.keysupport.nist80073.datamodel.PIVCardHolderUniqueID getPIVCardHolderUniqueID() -> b
+    void setPIVCardHolderUniqueID(org.keysupport.nist80073.datamodel.PIVCardHolderUniqueID) -> a
+    void decode() -> d
+com.idevity.card.read.Easter -> com.idevity.card.read.Easter:
+    java.lang.String TAG -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+com.idevity.card.read.Globals -> com.idevity.card.read.a:
+    com.idevity.card.read.Globals instance -> a
+    byte[] currentcarddata -> b
+    java.lang.String getShowDebug() -> a
+    java.lang.String getCardData() -> b
+    java.lang.String getReaderLog() -> c
+    void putCard(byte[]) -> a
+    byte[] getCard() -> d
+    com.idevity.card.read.Globals getInstance() -> e
+com.idevity.card.read.IdevityInfo -> com.idevity.card.read.IdevityInfo:
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+com.idevity.card.read.Read80073 -> com.idevity.card.read.Read80073:
+    java.lang.String TAG -> a
+    com.idevity.card.read.Globals globals -> b
+    android.widget.TextView timeoutlabel -> c
+    android.widget.TextView timeouturl -> d
+    android.widget.TextView spinnertext -> e
+    android.widget.ProgressBar spinner -> f
+    android.content.SharedPreferences sharedPref -> g
+    android.nfc.NfcAdapter adapter -> h
+    android.app.PendingIntent pendingIntent -> i
+    android.content.IntentFilter[] filters -> j
+    java.lang.String[][] techLists -> k
+    com.idevity.card.reader.CardReader80073 card -> l
+    com.idevity.card.emulator.data.CardData80073 carddata -> m
+    java.lang.StringBuffer readerLog -> n
+    boolean debug -> o
+    long last_touch -> p
+    int touch_seq -> q
+    void onCreate(android.os.Bundle) -> onCreate
+    void setupNFC() -> b
+    void shutdownNFC() -> c
+    void onResume() -> onResume
+    void onPause() -> onPause
+    void onDestroy() -> onDestroy
+    void onNewIntent(android.content.Intent) -> onNewIntent
+    void handleTag(android.content.Intent) -> a
+    void handleTag(android.nfc.Tag) -> a
+    void onClick(android.view.View) -> onClick
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    boolean access$0(com.idevity.card.read.Read80073) -> a
+    java.lang.String access$1() -> a
+    void access$2(com.idevity.card.read.Read80073) -> b
+    com.idevity.card.reader.CardReader80073 access$3(com.idevity.card.read.Read80073) -> c
+    android.widget.TextView access$4(com.idevity.card.read.Read80073) -> d
+    android.widget.ProgressBar access$5(com.idevity.card.read.Read80073) -> e
+    java.lang.StringBuffer access$6(com.idevity.card.read.Read80073) -> f
+    void access$7(com.idevity.card.read.Read80073) -> g
+    void access$8(com.idevity.card.read.Read80073,android.nfc.Tag) -> a
+com.idevity.card.read.Read80073$1 -> com.idevity.card.read.b:
+    com.idevity.card.read.Read80073 this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.idevity.card.read.Read80073$2 -> com.idevity.card.read.c:
+    com.idevity.card.read.Read80073 this$0 -> a
+    void run() -> run
+    com.idevity.card.read.Read80073 access$0(com.idevity.card.read.Read80073$2) -> a
+com.idevity.card.read.Read80073$2$1 -> com.idevity.card.read.d:
+    com.idevity.card.read.Read80073$2 this$1 -> a
+    void run() -> run
+com.idevity.card.read.Read80073$3 -> com.idevity.card.read.e:
+    com.idevity.card.read.Read80073 this$0 -> a
+    void onTagDiscovered(android.nfc.Tag) -> onTagDiscovered
+com.idevity.card.read.SettingsActivity -> com.idevity.card.read.SettingsActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+com.idevity.card.read.SettingsActivity$SettingsFragment -> com.idevity.card.read.f:
+    void onCreate(android.os.Bundle) -> onCreate
+com.idevity.card.read.SplashActivity -> com.idevity.card.read.SplashActivity:
+    long splashDelay -> a
+    void onCreate(android.os.Bundle) -> onCreate
+com.idevity.card.read.SplashActivity$1 -> com.idevity.card.read.g:
+    com.idevity.card.read.SplashActivity this$0 -> a
+    void run() -> run
+com.idevity.card.reader.CardReader80073 -> com.idevity.card.a.a:
+    java.lang.String TAG -> a
+    boolean debug -> b
+    android.content.Context ctx -> c
+    com.idevity.android.CardChannel channel -> d
+    com.idevity.card.emulator.data.CardData80073 carddata -> e
+    boolean dataavailable -> f
+    int threadcount -> g
+    java.lang.StringBuffer log -> h
+    boolean logupdated -> i
+    boolean isRunning -> j
+    java.lang.Thread readerThread -> k
+    void start(com.idevity.android.CardChannel) -> a
+    org.keysupport.smartcardio.ResponseAPDU transmit(org.keysupport.smartcardio.CommandAPDU) -> a
+    org.keysupport.nist80073.cardedge.PIVDataTempl getPIVData(org.keysupport.encoding.Tag) -> a
+    void log(java.lang.String) -> a
+    org.keysupport.nist80073.datamodel.PIVCardHolderUniqueID getCardHolderUniqueID() -> a
+    boolean cardDataAvailable() -> b
+    com.idevity.card.emulator.data.CardData80073 getData() -> c
+    boolean isRunning() -> d
+    boolean logUpdated() -> e
+    java.lang.String getLog() -> f
+    void stop() -> g
+    void access$0(com.idevity.card.reader.CardReader80073,boolean) -> a
+    boolean access$1(com.idevity.card.reader.CardReader80073) -> a
+    android.content.Context access$2(com.idevity.card.reader.CardReader80073) -> b
+    java.lang.String access$3() -> h
+    com.idevity.android.CardChannel access$4(com.idevity.card.reader.CardReader80073) -> c
+    org.keysupport.smartcardio.ResponseAPDU access$5(com.idevity.card.reader.CardReader80073,org.keysupport.smartcardio.CommandAPDU) -> a
+    com.idevity.card.emulator.data.CardData80073 access$6(com.idevity.card.reader.CardReader80073) -> d
+    void access$7(com.idevity.card.reader.CardReader80073,com.idevity.card.emulator.data.CardData80073) -> a
+    java.lang.Thread access$8(com.idevity.card.reader.CardReader80073) -> e
+com.idevity.card.reader.CardReader80073$1 -> com.idevity.card.a.b:
+    com.idevity.card.reader.CardReader80073 this$0 -> a
+    void run() -> run
+org.keysupport.encoding.TLV -> b.a.a.a:
+    org.keysupport.encoding.Tag tag -> a
+    int length -> b
+    byte[] value -> c
+    byte[] TLV -> d
+    byte[] getBytes() -> a
+    org.keysupport.encoding.Tag getTag() -> b
+    byte[] getValue() -> c
+    java.lang.String toString() -> toString
+org.keysupport.encoding.Tag -> b.a.a.b:
+    byte[] tag -> h
+    byte tagType -> i
+    byte tagClass -> j
+    boolean constructed -> k
+    byte[] PIV_APP_PROP_TMPL -> a
+    byte[] PIV_APP_AID -> b
+    byte[] PIV_APP_TAG_ALLOC -> c
+    byte[] PIV_APP_DESC -> d
+    byte[] PIV_APP_REF -> e
+    byte[] PIV_PIN_POLICY -> f
+    byte[] PIV_CHUID -> g
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+    byte[] getBytes() -> a
+    boolean isConstructed() -> b
+    java.lang.String toString() -> toString
+org.keysupport.nist80073.cardedge.PIVAPDUInterface -> b.a.b.a.a:
+    byte[] SELECT_PIV -> a
+    byte[] PIV_GET_DATA_HEADER -> b
+org.keysupport.nist80073.cardedge.PIVDataTempl -> b.a.b.a.b:
+    org.keysupport.encoding.Tag tag -> a
+    byte[] data -> b
+    void decode(byte[]) -> a
+    byte[] getData() -> a
+    java.lang.String toString() -> toString
+org.keysupport.nist80073.datamodel.FASCN -> b.a.b.b.a:
+    boolean debug -> a
+    byte[] ac -> b
+    byte[] sc -> c
+    byte[] cn -> d
+    byte cs -> e
+    byte ici -> f
+    byte[] pi -> g
+    byte oc -> h
+    byte[] oi -> i
+    byte poa -> j
+    byte[] dfascn -> k
+    void decodeFASCN(byte[]) -> a
+    java.lang.String getAgencyCode() -> a
+    java.lang.String getAssociationCategory() -> b
+    java.lang.String getCredentialNumber() -> c
+    java.lang.String getCredentialSeries() -> d
+    java.lang.String getIndividualCredentialIssue() -> e
+    java.lang.String getOrganizationalCategory() -> f
+    java.lang.String getOrganizationalIdentifier() -> g
+    java.lang.String getPersonIdentifier() -> h
+    java.lang.String getSystemCode() -> i
+    byte rtranslate(byte) -> a
+    byte[] rtranslate(byte[]) -> b
+    java.lang.String toString() -> toString
+    java.lang.String translateS(byte[]) -> c
+org.keysupport.nist80073.datamodel.PIVCardApplicationProperty -> b.a.b.b.b:
+    byte[] aid -> a
+    byte[] tag_alloc -> b
+    byte[] description -> c
+    byte[] reference -> d
+    byte[] pcap -> e
+    void decode(byte[]) -> a
+    byte[] getEncoded() -> a
+    java.lang.String toString() -> toString
+org.keysupport.nist80073.datamodel.PIVCardHolderUniqueID -> b.a.b.b.c:
+    byte[] fascn -> a
+    byte[] ac -> b
+    byte[] oi -> c
+    byte[] duns -> d
+    byte[] guid -> e
+    byte[] expires -> f
+    byte[] signature -> g
+    byte[] edc -> h
+    byte[] chuid -> i
+    void decode(byte[]) -> a
+    byte[] getEncoded() -> a
+    java.lang.String toString() -> toString
+org.keysupport.nist80073.datamodel.PIVCertificate -> b.a.b.b.d:
+    byte CERTINFO_GZIP_COMPRESSION -> a
+    boolean gzip_compressed -> b
+    byte[] certificate -> c
+    byte[] certinfo -> d
+    byte[] mscuid -> e
+    byte[] edc -> f
+    byte[] piv_cert_obj -> g
+    void decode(byte[]) -> a
+    byte[] getEncoded() -> a
+    java.lang.String toString() -> toString
+org.keysupport.nist80073.datamodel.PIVDiscoveryObject -> b.a.b.b.e:
+    byte[] aid -> a
+    byte[] pin_pol -> b
+    boolean g_pin_primary -> c
+    byte[] pdo -> d
+    void decode(byte[]) -> a
+    byte[] getEncoded() -> a
+    java.lang.String toString() -> toString
+org.keysupport.smartcardio.CommandAPDU -> b.a.c.a:
+    byte[] apdu -> a
+    int nc -> b
+    int ne -> c
+    int dataOffset -> d
+    void setHeader(int,int,int,int) -> a
+    int getCLA() -> a
+    int getINS() -> b
+    int getP1() -> c
+    int getP2() -> d
+    byte[] getData() -> e
+    int getNe() -> f
+    byte[] getBytes() -> g
+    java.lang.String toString() -> toString
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+org.keysupport.smartcardio.ResponseAPDU -> b.a.c.b:
+    byte[] apdu -> e
+    byte[] SW_NO_ERROR -> a
+    byte[] SW_FUNC_NOT_SUPPORTED -> b
+    byte[] SW_FILE_NOT_FOUND -> c
+    byte[] SW_UNKNOWN -> d
+    byte[] getData() -> a
+    int getSW1() -> b
+    int getSW2() -> c
+    int getSW() -> d
+    void setSW(byte[]) -> a
+    byte[] getBytes() -> e
+    java.lang.String toString() -> toString
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode

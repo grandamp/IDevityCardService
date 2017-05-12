@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<EditTextPreference android:key="pref_defaultemail"
+		android:title="@string/pref_default_email"
+		android:summary="@string/pref_default_email_summary"
+		android:defaultValue="support@idevity.com" />
+</PreferenceScreen>

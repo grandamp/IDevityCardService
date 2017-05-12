@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Emulation Service Log</string>
+	<string name="appname_version">IDevity Knock-Knock, v1.0 Alpha</string>
+    <string name="remote_service_started">Service Started</string>
+    <string name="remote_service_stopped">Service Stopped</string>
+    <string name="remote_service_label">Applet Service</string>
+    <string name="remote_service_disconnected">Remote Service Disconnected</string>
+    <string name="remote_service_connected">Remote Service Connected</string>
+
+    <string name="aid_description">PIV Card Application AID</string>
+    <string name="service_description">PIV Emulator Service</string>
+    <string name="service_started">PIV Emulator Service Started</string>
+    <string name="service_stopped">PIV Emulator Service Stopped</string>
+    <string name="results_available">Test case results are available</string>
+    <string name="service_label">PIV_EMULATOR</string>
+    
+    <string name="x">y</string>
+    
+	<string name="action_about">About</string>
+	<string name="action_settings">Settings</string>
+	<string name="action_share">Share</string>
+	<string name="copyright">Copyright 2014. All rights reserved.</string>
+	<string name="feedback">
+		To provide feedback:
+		<a href="mailto:support@idevity.com?subject=Android App">support@idevity.com</a>
+	</string>
+	<string name="idevity_logo">IDevity Logo</string>
+	<string name="idevity_id_logo">IDevity ID Logo</string>
+	<string name="instructions_1">Hold your smart card to the back of your device.
+	</string>
+		<string name="instructions_2">This app clones PIV, PIV-I, CIV and TWIC smart
+		cards.</string>
+	<string name="instructions_clone_1">Remove the card from the back of your device.
+	</string>
+	<string name="instructions_clone_2">We have generated a new CAK keypair and injected the new Public Key into the Card Authentication Certificate.
+	</string>
+	<string name="instructions_clone_3">When you are ready to proceed, select the Launch button below.
+	</string>
+	<string name="clone_btn_launch">Launch Emulator</string>
+		<string name="nfc_disabled_warn">WARNING: NFC is NOT Enabled!</string>
+	<string name="nfc_disabled_warn_or_usb_not_plugged_in">Enable NFC or Plug in OTG USB Smart Card Reader
+	</string>
+	<string name="plug_in_usb_warn">Plug in OTG USB Smart Card Reader</string>
+	<string name="nfc_disclaimer">*There is a known issue reading cards with your
+		device configuration:</string>
+	<string name="nfc_disclaimer_more_info">
+		<a href="https://code.google.com/p/android/issues/detail?id=37882">Android Issue 37882</a>
+	</string>
+	<string name="pref_default_email">Default Email for Sharing</string>
+	<string name="pref_default_email_summary">Set a default email address to send logs and data
+		values when Sharing is selected.</string>
+	<string name="progress_text">Reading card&#8230;</string>
+	<!-- <string name="share">Share Via&#8230;</string> -->
+	<string name="splashscreen_caption">Enterprise Identity, Authentication, and Consumer
+		Identity</string>
+	<string name="subject">Subject</string>
+	<string name="system_code">System Code</string>
+	<string name="title_activity_idevity_info">Info</string>
+	<string name="title_activity_read_main">Clone</string>
+	<string name="title_activity_card_proxy">Card Proxy Log</string>
+	<string name="title_activity_reading_progress">In progress</string>
+	<string name="title_activity_settings">Settings</string>
+	<string name="warranties">Use of this application implies no implicit
+		warranties.</string>
+	<string name="website">
+		<a href="http://www.idevity.com">www.idevity.com</a>
+	</string>
+	<string name="title_activity_easter">Feedback</string>
+	<string name="eastercardtype">Select Card Manufacturer:</string>
+	<string name="easterprivacy">Privacy: Information provided will not be used for
+		any purpose other than to assess support for mobile device models and
+		card manufacturers.</string>
+	<string name="eastercardother">Other/Unknown Manufacturer:</string>
+	<string name="eastercardissuer">Card Issuer:</string>
+	<string name="eastercardissuedate">Card Issue Date:</string>
+	<string name="easterinstructions1">Please enter the following information, if
+		possible.</string>
+	<string name="easterinstructions2">The information below will be used to identify
+		mobile device and card support requirements.</string>
+	<string name="easterinstructions3">Select the Share option from the toolbar and email
+		to support@idevity.com.</string>
+	<string name="supportemail">support@idevity.com</string>
+	<string name="idevity">IDevity</string>
+	
+	<string-array name="cardtypemanarray">
+		<item>Athena</item>
+		<item>CardLogix</item>
+		<item>Gemalto</item>
+		<item>Giesecke &amp; Devrient</item>
+		<item>Hitachi</item>
+		<item>Keycorp Limited</item>
+		<item>NXP</item>
+		<item>Oberthur</item>
+		<item>SafeNet</item>
+		<item>Sagem Orga</item>
+		<item>TecSec</item>
+		<item>Other/Don\&#39;t Know</item>
+	</string-array>
+
+	<string name="label_status">Reader Status:</string>
+	<string name="disconnected">Disconnected</string>
+	<string name="connected">Connected</string>
+	
+</resources>

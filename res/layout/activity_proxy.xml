@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.idevity.android.contact.ProxyActivity"
+    android:baselineAligned="false">
+
+    <fragment
+        android:id="@+id/logContainer"
+        android:name="com.idevity.android.contact.LogFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.54"
+        tools:layout="@layout/fragment_log" />
+
+    <fragment
+        android:id="@+id/statusContainer"
+        android:name="com.idevity.android.contact.StatusFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_status" />
+
+</LinearLayout>
+
